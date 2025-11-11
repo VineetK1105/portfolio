@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — projects in X, Y, Z" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="subtitle">Role — Short tagline. <a href="#projects">See projects →</a></p>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <!-- repeat project cards -->
+        <article class="card">
+          <img src="images/project1.png" alt="Project 1 screenshot">
+          <h3>Project One</h3>
+          <p>Short one-line description. <a href="https://github.com/yourusername/project1">Source</a></p>
+        </article>
+        <!-- add more -->
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Short bio. <a href="resume.pdf" download>Download resume (PDF)</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <!-- Optionally add a contact form that submits to a form service -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Your Name — <a href="https://github.com/yourusername">GitHub</a></div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
